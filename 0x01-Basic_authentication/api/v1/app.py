@@ -19,8 +19,9 @@ auth = None #initialize auth variable
 
 # Check the AUTH_TYPE environment variable to decide which authentication to use
 auth_type = os.getenv("AUTH_TYPE", None)
-if auth_type:
-    from api.v1.auth.auth import Auth
+if auth_type == "basic_auth":
+    auth = BasicAuth()
+else:
     auth = Auth()
 
 @app.before_request
