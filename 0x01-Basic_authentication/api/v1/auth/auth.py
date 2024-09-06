@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 import request from flask
 from typing import list, TypeVar
 
