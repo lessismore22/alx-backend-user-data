@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
-import request from flask
-from typing import list, TypeVar
+from flask import request
+from typing import List, TypeVar
 
 
 class Auth:
@@ -42,7 +42,7 @@ class Auth:
         if request is None:
             return None
         
-        if request.headers.get("Authorization", None)
+        ###if request.headers.get("Authorization", None)
 
 
     def current_user(self, request=None) -> TypeVar('User'):
